@@ -1,0 +1,102 @@
+{
+  "sha256": {
+    "CASAS_MCI_LOCKEDTASK_cov3_covpp_all_oof_preds.csv": "feb250aafe8ca31e4fcffb26c5a5a5ebcd64c69c72b32fe45ac26e286df054a2",
+    "CASAS_DX1_LOCKEDTASK_cov3_covpp_all_oof_preds.csv": "34896b21591e4aa7d4670517c1935b1d8eff21f2dfe4f3a79da11d88208ffe4b",
+    "TIHM_Agitation_oof_preds_cov3_covpp_all_CANON.csv": "341ccb3832ce2ea08ec7bfb79fbc3243579b3f464852339bc4eae4ab2eacffa9"
+  },
+  "dataset_audit": {
+    "CASAS-MCI OOF": {
+      "rows": 176,
+      "unique_participant_id": 176,
+      "positives": 56,
+      "negatives": 120,
+      "prevalence": 0.3181818181818182
+    },
+    "CASAS-DX1 OOF": {
+      "rows": 196,
+      "unique_participant_id": 196,
+      "positives": 20,
+      "negatives": 176,
+      "prevalence": 0.10204081632653061
+    },
+    "TIHM OOF": {
+      "rows": 2722,
+      "unique_participant_id": 56,
+      "positives": 114,
+      "negatives": 2608,
+      "prevalence": 0.04188096987509184
+    }
+  },
+  "metrics": {
+    "CASAS-MCI OOF": {
+      "Cov3": {
+        "AUC": 0.536756,
+        "AUPRC": 0.359866
+      },
+      "CovPP": {
+        "AUC": 0.531548,
+        "AUPRC": 0.371591
+      },
+      "All": {
+        "AUC": 0.595387,
+        "AUPRC": 0.454899
+      },
+      "delta_all_minus_cov3": {
+        "AUC": 0.058631,
+        "AUPRC": 0.095033
+      },
+      "gap_closed": {
+        "AUC": -0.088832,
+        "AUPRC": 0.123385
+      }
+    },
+    "CASAS-DX1 OOF": {
+      "Cov3": {
+        "AUC": 0.78054,
+        "AUPRC": 0.32897
+      },
+      "CovPP": {
+        "AUC": 0.851989,
+        "AUPRC": 0.677191
+      },
+      "All": {
+        "AUC": 0.85767,
+        "AUPRC": 0.591895
+      },
+      "delta_all_minus_cov3": {
+        "AUC": 0.077131,
+        "AUPRC": 0.262925
+      },
+      "gap_closed": {
+        "AUC": 0.926335,
+        "AUPRC": 1.324411
+      }
+    },
+    "TIHM OOF": {
+      "Cov3": {
+        "AUC": 0.808973,
+        "AUPRC": 0.234876
+      },
+      "CovPP": {
+        "AUC": 0.913828,
+        "AUPRC": 0.34792
+      },
+      "All": {
+        "AUC": 0.913777,
+        "AUPRC": 0.347185
+      },
+      "delta_all_minus_cov3": {
+        "AUC": 0.104804,
+        "AUPRC": 0.112309
+      },
+      "gap_closed": {
+        "AUC": 1.000481,
+        "AUPRC": 1.006543
+      }
+    }
+  },
+  "tolerance": {
+    "metrics_abs": 1e-06,
+    "prevalence_abs": 1e-06
+  }
+}
